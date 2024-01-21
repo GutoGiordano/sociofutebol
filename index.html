@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzeiro E.C - Seja Sócio</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css"> <!-- Link do arquivo do bootstrap css -->
+    <link rel="stylesheet" href="./lib/main.css">
+    <link rel="shortcut icon" href="./lib/img/escudo-cruzeiro.png" type="image/x-icon">
+</head>
+<body>
+    <header id="cabecalho" class="container d-flex align-items-center"> <!-- ajustando o conteúdo no header pelo bootstrap -->
+        <img src="./lib/img/escudo-cruzeiro.png" alt="Logotipo do Cruzeiro Esporte Clube" class="me-3">
+        <h1 class="h2">Seja Sócio do Cabuloso</h1>
+    </header>
+    <div class="container" id="carousel"> <!-- qdo coloco no container eu limito a exibição em tela cheia, o cateúdo fora do container, pega a tela toda -->
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel"> <!-- carousel | data-bs-ride = carousel identifica para o BS que é um carousel | a id, serve para fazer os botões de controle do slide funcionar -->
+            <div class="carousel-inner"> <!-- o container do carousel -->
+                <div data-bs-interval="3000" class="carousel-item active"> <!-- aqui vão as do carousel | active faz a ativação do carousel, geralmente indica o primeiro item dele | data-bs-interval="tempo em milisegundos - configuração do tempo que vai mudar o slide"-->
+                    <img class="d-block w-100" src="./lib/img/banner1.png" alt="Torcida do Cruzeiro"> <!--  class="d-block w-100" faz ocupar 100% da página-->
+                    <div class="overlay"></div>
+                    <div class="carousel-caption"> <!-- Inserindo texto nas imagens -->
+                        <h2>Encontro marcado! Campeonato Mineiro começa agora.</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item"> <!-- aqui vão as do carousel -->
+                    <img class="d-block w-100" src="./lib/img/banner2.png" alt="Time do Cruzeiro 2003">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h2>Os 20 anos da tríplice croa.</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item"> <!-- aqui vão as do carousel -->
+                    <img class="d-block w-100" src="./lib/img/banner3.png" alt="Novo Raposão e Raposinho">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption">
+                        <h2>Os novos Raposão e Raposinho.</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button"> <!-- adicionando botões para controlar o carousel | prev (<) | data-bs-target=#id fala para onde o botão vai voltar | data-bs-slide="prev" comprtamento (voltar)-->
+                <span class="carousel-control-prev-icon"></span> <!-- o estilo do botão prev-icon (<) -->
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span> <!-- o estilo do botão next-icon (>) -->
+            </button>
+            <div class="carousel-indicators"> <!-- adicionando a quantidade de slides no carousel -->
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button> <!-- data-bs-slide-to="posicão" diz para onde o botão vai direcionar, lembrando que o primeiro sempre é zero -->
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="container"> <!-- configurando o tamanho da página através do container no bootstrap -->
+            <h2 class="planos">
+                Escolha o seu plano Cabuloso
+            </h2>
+            <div class="row"> <!-- configurando as linhas -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-bg-primary">
+                        <img src="./lib/img/card1.png" alt="Torcida">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Sócio Interior</h4>
+                            <h5 class="card-subtitle">O interior de Minas tem dono</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto consequatur possimus minima obcaecati? Repudiandae animi dolores dolorem. Explicabo quibusdam saepe asperiores, ut aliquam voluptatibus! Corrupti voluptatum ullam facilis reprehenderit.
+                            </p>
+                            <a href="#" class="btn btn-warning mt-auto">Seja sócio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3"> <!-- Atentar para não ficar um card abaixo do outro -->
+                    <div class="card text-bg-primary"> <!-- troca a cor do card -->
+                        <img src="./lib/img/card2.png" alt="Torcida">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Sócio Cruzeiro Sempre</h4>
+                            <h5 class="card-subtitle">Todo jogo, presença garantida</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto consequatur possimus minima obcaecati? Repudiandae animi dolores dolorem. Explicabo quibusdam saepe asperiores, ut aliquam voluptatibus! Corrupti voluptatum ullam facilis reprehenderit.
+                            </p>
+                            <a href="#" class="btn btn-warning mt-auto">Seja sócio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card text-bg-primary">
+                        <img src="./lib/img/card3.png" alt="Torcida">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Sócio Cruzeiro Cabuloso</h4>
+                            <h5 class="card-subtitle">Meu sentimento não para só no estádio</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto consequatur possimus minima obcaecati? Repudiandae animi dolores dolorem. Explicabo quibusdam saepe asperiores, ut aliquam voluptatibus! Corrupti voluptatum ullam facilis reprehenderit.
+                            </p>
+                            <a href="#" class="btn btn-warning mt-auto">Seja sócio</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>
+        <footer>
+            
+        </footer>    
+
+    <script src="./lib/bootstrap.bundle.min.js"></script> <!-- Link do arquivo do JS Bootstrap -->
+</body>
+</html>
